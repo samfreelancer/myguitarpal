@@ -1,0 +1,142 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="scripts/jquery-1.6.2.js"></script>
+<script>
+$(document).ready(function() {
+    var targets = $('.col-1');
+    var len = targets.length;
+    i = 0;
+    setInterval(function() {
+        // remove from current
+        $('.col-1.highlight').removeClass('highlight');
+        i = (i + 1) % len;
+        targets.eq(i).addClass('highlight');
+    }, 3000);
+});</script>
+</head>
+
+<body>
+<div class="wrapper">
+  <div class="top-section">
+  	<div class="mainbanner"><img src="images/bg-banner.jpg" width="1060" height="589" /></div>
+    <div class="headercover">   
+      <div id="header" class="header">         
+        <div id="logo">
+          <a href="http://launch.myguitarpal.com/" title="Just another WordPress site"><img src="images/logo.png" alt="My Guitar Pal"></a>
+        </div>
+        <div class="rightheader">
+          <form name="wp_login_form" id="wp_login_form" action="" method="post">
+            
+            
+            <div class="sigupppy">
+              
+              <div class="hdngs">
+                
+                <span>email:</span>
+<input type="text" tabindex="10" id="user_login" name="username" class="loginfield">
+
+                
+              </div> <!-- END div hdngs -->
+              <div class="hdngs password">
+                
+                                <span>password:</span>
+                <input type="password" tabindex="20" size="15" id="user_pass" name="password" class="loginfield">
+                
+              </div> <!-- END div txting -->
+               <!-- To hold validation results -->
+               <!-- END div btng --><!-- END div frgety -->
+              
+              
+              
+            </div>
+<div class="btng">
+
+<input type="submit" value="Log In" class="roundedbtn" id="submitbtn">
+<input type="button" value="Sign Up" class="roundedbtn" onclick="window.location.href='?page_id=17'">
+
+</div>
+          </form>
+          
+        </div>
+      </div>  
+    </div>
+    <div class="inner-wrapper">
+      <div class="navi">    
+        <a href="#" class="active">Home</a><a href="#">Blog</a>
+      </div>
+      <div class="mid-wraper">
+      <div class="banner-text">
+		<h2>Launching 2014</h2>
+        <p>In the meantime why don't you sign up
+for 10 free video lessons, with new free 
+lessons added all the time?</p>
+<h4>Free Lessons!</h4>
+<div class="large-text">Follow us on Facebook and Twitter
+and You Could Win a New Guitar
+From 
+        <div class="signup"><a href="#"><img src="images/singnup.png" width="109" height="35" /></a></div>
+ <div class="sign"><img src="images/sign.png" width="155" height="45" /></div>
+        <div class="socialIcon"><a href="https://www.facebook.com/MyGuitarPal" target="_blank"><img src="images/f-icon.png" width="33" height="32" /></a><a href="https://twitter.com/MyGuitarPal" target="_blank"><img src="images/t-icon.png" width="33" height="32" /></a></div>
+</div>
+       
+        <div class="r-text">Contest Ends "Date"</div>
+      </div>
+      <div class="video"><img src="images/video.png" width="453" height="331" /></div>
+      </div>
+    </div>
+  </div>
+  <div class="contentwraper">
+    <div class="wrapperContent">
+      <div class="mid-section">
+        <div class="col-1 highlight">
+        <div class="arrow"><img src="images/arrow-1.png" width="254" height="91" /></div>
+        <div class="img-box">
+          <img src="images/img-1.png" width="217" height="155" />
+          </div>
+          <h4>All Levels in the Most Popular Styles</h4> 
+          <div class="oval"><img src="images/choose.png" width="159" height="42" /></div>  
+        </div>
+        <div class="col-1">
+         <div class="arrow"><img src="images/learn-arrow.png" width="254" height="91" /></div>
+        <div class="img-box">
+          <img src="images/img-2.png" width="211" height="112" />
+          </div>
+          <h4>Hundreds of HD Videos  at Launch</h4> 
+          <div class="oval"><img src="images/learn.png" width="159" height="42" /></div>  
+        </div>
+        <div class="col-1">
+        <div class="arrow"><img src="images/play-arrow.png" width="254" height="91" /></div>
+        <div class="img-box">
+          <img src="images/img-3.png" width="220" height="176" />
+          </div>
+          <h4>Studio Produced, Lesson Specific Jam Tracks</h4>   
+          <div class="oval"><img src="images/play.png" width="159" height="42" /></div>
+        </div>
+        <div class="col-1">
+       <div class="arrow"><img src="images/print-arrow.png" width="254" height="91" /></div>
+        <div class="img-box">
+          <img src="images/img-4.png" width="137" height="173" />
+          </div>
+          <h4>Hundreds of Songs, Arrangements and Diagrams</h4>   
+          <div class="oval"><img src="images/print.png" width="159" height="42" /></div>
+        </div>
+      </div>
+    </div>
+  </div>
+    <div class="footer">
+      <div><img src="images/footer.jpg" width="1063" height="81" /></div>
+      <div class="social">
+        <div class="links">
+        <a href="https://www.facebook.com/MyGuitarPal" target="_blank"><img src="images/face-ico.gif" width="38" height="37" /></a><a href="https://twitter.com/MyGuitarPal" target="_blank"><img src="images/twit-ico.gif" width="38" height="37" /></a><a href="#"><img src="images/t-ico.gif" width="38" height="37" /></a><a href="https://www.youtube.com/myguitarpal" target="_blank"><img src="images/you-tube.gif" width="38" height="37" /></a>
+        </div>
+        <div class="right-text"><span class="left"></span><span class="mid"> By Guitar Players for Guitar Players</span><span class="right"></span></div>
+        <div class="text">Lorem Ipsum dolor sit amet Lorem Ipsum dolor sit amet Lorem Ipsum dolor sit Lorem Ipsum dolor sit amet Lorem Ipsum dolor sit amet Lorem Ipsum dolor sit amet Lorem Ipsum dolor sit amet</div>
+      </div>
+      
+    </div>
+</body>
+</html>

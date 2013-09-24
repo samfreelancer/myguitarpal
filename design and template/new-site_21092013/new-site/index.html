@@ -1,0 +1,138 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="scripts/jquery-1.6.2.js"></script>
+<script>
+$(document).ready(function() {
+    var targets = $('.col-1');
+    var len = targets.length;
+    i = 0;
+    setInterval(function() {
+        // remove from current
+        $('.col-1.highlight').removeClass('highlight');
+        i = (i + 1) % len;
+        targets.eq(i).addClass('highlight');
+    }, 3000);
+});</script>
+</head>
+
+<body>
+<div class="wrapper">
+  <div class="top-section">
+  	<div class="mainbanner"><img src="images/bg-banner.jpg" width="1060" height="589" /></div>
+    <div class="headercover">   
+      <div id="header" class="header">         
+        <div id="logo">
+          <a href="http://launch.myguitarpal.com/" title="Just another WordPress site"><img src="images/logo.png" alt="My Guitar Pal"></a>
+        </div>
+        <div class="rightheader">
+          <form name="wp_login_form" id="wp_login_form" action="" method="post">
+            
+            
+            <div class="sigupppy">
+              
+              <div class="hdngs">
+                
+                <span>email</span><br>
+                <span>password</span>
+                
+              </div> <!-- END div hdngs -->
+              <div class="txting">
+                
+                <input class="loginfield" name="username" id="user_login" tabindex="10" type="text">
+                <input class="loginfield" name="password" id="user_pass" size="15" tabindex="20" type="password">
+                
+              </div> <!-- END div txting -->
+              <div id="result"></div> <!-- To hold validation results -->
+              <div class="btng">
+                
+                <input value="Log In" class="roundedbtn" id="submitbtn" type="submit">
+                <input value="Sign Up" class="roundedbtn" onclick="window.location.href='?page_id=17'" type="button">
+                
+              </div> <!-- END div btng --><!-- END div frgety -->
+              
+              
+              
+            </div> <!-- END div siguppy -->
+            <!--<table>
+              <tbody><tr>
+                <td><span>email</span></td>
+                <td><input type="text" class="loginfield" name="username" id="user_login" tabindex="10"></td>
+                <td rowspan="2"><input type="submit" value="Log In" class="roundedbtn" id="submitbtn" >
+                <br>
+                
+                </td>
+                <td rowspan="2"><input type="button" value="Sign Up" class="roundedbtn" onClick="window.location.href='?page_id=17'"></td>
+              </tr>
+              <tr>
+                <td><span>password</span></td>
+                <td><input type="password" class="loginfield"  name="password" id="user_pass" size="15" tabindex="20"></td>
+               
+              </tr>
+            </tbody></table>-->
+          </form> <!-- END form wp_login_form -->
+          
+         </div>
+        </div>  
+    </div>
+    <div class="inner-wrapper">
+      <div class="navi">    
+        <a href="#" class="active">Home</a><a href="#">Blog</a>
+      </div>
+      <div class="mid-wraper">
+      <div class="banner-text">
+        <img src="images/left-section.png" width="335" height="300" />
+        <div class="signup"><a href="#"><img src="images/singnup.png" width="109" height="35" /></a></div>
+        <div class="socialIcon"><a href="#"><img src="images/f-icon.png" width="33" height="32" /></a><a href="#"><img src="images/t-icon.png" width="33" height="32" /></a></div>
+      </div>
+      <div class="video"><img src="images/video.png" width="453" height="331" /></div>
+      </div>
+    </div>
+  </div>
+  <div class="contentwraper">
+    <div class="wrapperContent">
+      <div class="mid-section">
+        <div class="col-1 highlight">
+        <div class="arrow"><img src="images/arrow-1.png" width="254" height="91" /></div>
+        <div class="img-box">
+          <img src="images/img-1.png" width="217" height="155" />
+          </div>
+          <h4>All Levels in the Most Popular Styles</h4> 
+          <div class="oval"><img src="images/choose.png" width="159" height="42" /></div>  
+        </div>
+        <div class="col-1">
+         <div class="arrow"><img src="images/learn-arrow.png" width="254" height="91" /></div>
+        <div class="img-box">
+          <img src="images/img-2.png" width="211" height="112" />
+          </div>
+          <h4>Hundreds of HD Videos  at Launch</h4> 
+          <div class="oval"><img src="images/learn.png" width="159" height="42" /></div>  
+        </div>
+        <div class="col-1">
+        <div class="arrow"><img src="images/play-arrow.png" width="254" height="91" /></div>
+        <div class="img-box">
+          <img src="images/img-3.png" width="220" height="176" />
+          </div>
+          <h4>Studio Produced, Lesson Specific Jam Tracks</h4>   
+          <div class="oval"><img src="images/play.png" width="159" height="42" /></div>
+        </div>
+        <div class="col-1">
+       <div class="arrow"><img src="images/print-arrow.png" width="254" height="91" /></div>
+        <div class="img-box">
+          <img src="images/img-4.png" width="137" height="173" />
+          </div>
+          <h4>Hundreds of Songs, Arrangements and Diagrams</h4>   
+          <div class="oval"><img src="images/print.png" width="159" height="42" /></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+  <img src="images/footer.jpg" width="1060" height="190" /></div>
+  
+</div>
+</body>
+</html>
