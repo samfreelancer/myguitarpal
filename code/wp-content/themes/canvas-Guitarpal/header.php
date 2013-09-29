@@ -54,143 +54,104 @@
     <title><?php woo_title(); ?></title>
     <?php woo_meta(); ?>
     <link rel="pingback" href="<?php echo esc_url( get_bloginfo( 'pingback_url' ) ); ?>" />
-    <link type="text/css" rel="stylesheet" href="<?php bloginfo('template_directory') ?>/css/style.css" />
-    
-    <?php wp_head(); ?>
-    <?php woo_head(); ?>
-  </head>
-<body <?php body_class(); ?>>
-  <?php woo_top(); ?>
-  <div class="headercovertop"></div>
-  <?php woo_header_before(); ?>
-  <div class="headercover">   
-	<div id="header" class="header">
- 		
-	  <?php woo_header_inside(); ?>
-       
-	   <div id="logo">
-		  <?php
-			// Website heading/logo and description text.
-			if ( isset( $woo_options['woo_logo'] ) && ( '' != $woo_options['woo_logo'] ) ) {
-				$logo_url = $woo_options['woo_logo'];
-				if ( is_ssl() ) $logo_url = str_replace( 'http://', 'https://', $logo_url );
-
-				echo '<a href="' . esc_url( $site_url ) . '" title="' . esc_attr( $site_description ) . '"><img src="' . esc_url( $logo_url ) . '" alt="' . esc_attr( $site_title ) . '" /></a>' . "\n";
-			} // End IF Statement
-			
-			echo '<' . $heading_tag . ' class="site-title"><a href="' . esc_url( $site_url ) . '">' . $site_title . '</a></' . $heading_tag . '>' . "\n";
-			if ( $site_description ) { echo '<span class="site-description">' . $site_description . '</span>' . "\n"; }
-		?>
-		</div><!-- /#logo -->
-     
-      <?php
-      if (!$user_ID) {  
-      ?>  <!-- IF 1 -->  
-	    <div class="rightheader">
-          <form name="wp_login_form" id="wp_login_form" action="" method="post">
-        
-        
-          <div class="sigupppy">
-        
-        	<div class="hdngs">
-            
-            	<span>email</span><br>
-                <span>password</span>
-            
-            </div> <!-- END div hdngs -->
-            <div class="txting">
-            
-            	<input type="text" class="loginfield" name="username" id="user_login" tabindex="10">
-               <input type="password" class="loginfield"  name="password" id="user_pass" size="15" tabindex="20">
-            
-            </div> <!-- END div txting -->
-            <div id="result"></div> <!-- To hold validation results -->
-            <div class="btng">
-            
-            	<input type="submit" value="Log In" class="roundedbtn" id="submitbtn" >
-               	<input type="button" value="Sign Up" class="roundedbtn" onClick="window.location.href='?page_id=17'">
-            
-            </div> <!-- END div btng -->
-            <div class="frgety">
-            
-            	<a href="wp-login.php?action=lostpassword">Forget Password</a>
-            
-            </div> <!-- END div frgety -->
-        
-        
-        
-        </div> <!-- END div siguppy -->
-        	<!--<table>
-              <tbody><tr>
-                <td><span>email</span></td>
-                <td><input type="text" class="loginfield" name="username" id="user_login" tabindex="10"></td>
-                <td rowspan="2"><input type="submit" value="Log In" class="roundedbtn" id="submitbtn" >
-                <br>
-                
-                </td>
-                <td rowspan="2"><input type="button" value="Sign Up" class="roundedbtn" onClick="window.location.href='?page_id=17'"></td>
-              </tr>
-              <tr>
-                <td><span>password</span></td>
-                <td><input type="password" class="loginfield"  name="password" id="user_pass" size="15" tabindex="20"></td>
-               
-              </tr>
-            </tbody></table>-->
-		</form> <!-- END form wp_login_form -->
-        
-       </div> <!-- END div rightheader -->
-     <?php }?> <!-- END IF 1 -->    
-
-   <script src="http://code.jquery.com/jquery-1.4.4.js"></script>
-   <script type="text/javascript">  						
-	 $("#submitbtn").click(function() {
-
-       $('#result').html('<img src="  <?php bloginfo('template_url'); ?>/images/loader.gif" class="loader" />').fadeIn();
-       var input_data = $('#wp_login_form').serialize();
-       $.ajax({
-         type: "POST",
-         url:  "<?php echo "http://" . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI']; ?>",
-         data: input_data,
-         success: function(msg){
-           $('.loader').remove();
-           $('<div>').html(msg).appendTo('div#result').hide().fadeIn('slow');
-         }
+    <!--  <link type="text/css" rel="stylesheet" href="<?php //bloginfo('template_directory') ?>/css/style.css" /> -->
+    <script type="text/javascript" src="<?php bloginfo('template_directory') ?>/includes/js/jquery-1.6.2.js"></script>
+    <script type="text/javascript">  						
+    $("#submitbtn").click(function() {
+        $('#result').html('<img src="  <?php bloginfo('template_url'); ?>/images/loader.gif" class="loader" />').fadeIn();
+        var input_data = $('#wp_login_form').serialize();
+        $.ajax({
+            type: "POST",
+            url:  "<?php echo "http://" . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI']; ?>",
+            data: input_data,
+            success: function(msg){
+                $('.loader').remove();
+                $('<div>').html(msg).appendTo('div#result').hide().fadeIn('slow');
+            }
        });
-     return false;
+        return false;
 
      });
-   </script>        
-      
-<!-- / Robin Add -->
-        <h3 class="nav-toggle icon"><a href="#navigation"><?php _e( 'Navigation', 'woothemes' ); ?></a></h3>
-	      
-		<?php if ( isset( $woo_options['woo_ad_top'] ) && ( 'true' == $woo_options['woo_ad_top'] ) ) { ?>
-        <div id="topad">
-        
-		<?php if ( ( isset( $woo_options['woo_ad_top_adsense'] ) ) && ( '' != $woo_options['woo_ad_top_adsense'] ) ) { 
-            echo stripslashes( get_option('woo_ad_top_adsense') );             
-        } else {
-        	$top_ad_image = $woo_options['woo_ad_top_image'];
-        	if ( is_ssl() ) $top_ad_image = str_replace( 'http://', 'https://', $top_ad_image );
-        ?>
-            <a href="<?php echo esc_url( get_option( 'woo_ad_top_url' ) ); ?>"><img src="<?php echo esc_url( $top_ad_image ); ?>" alt="" /></a>
-        <?php } ?>		   	
-            
-        </div><!-- /#topad -->
-        <?php } ?> 
- 
-<!-- END Robin Add -->
-        
+    $(document).ready(function() {
+        var targets = $('.col-1');
+        var len = targets.length;
+        i = 0;
+        setInterval(function() {
+            // remove from current
+            $('.col-1.highlight').removeClass('highlight');
+            i = (i + 1) % len;
+            targets.eq(i).addClass('highlight');
+        }, 3000);
+    });
+   </script>
+    <?php wp_head(); ?>
+    <?php //woo_head(); ?>
+  </head>
+<body>
+    <?php woo_top(); ?>
+    <div class="wrapper">
+        <?php woo_header_before(); ?>
+        <div class="top-section">
+            <div class="mainbanner"><img src="<?php bloginfo('template_url'); ?>/images/bg-banner.jpg" width="1060" height="589" /></div>
+		    <div class="headercover">   
+                <div id="header" class="header">         
+                    <div id="logo">
+                        <a href="http://launch.myguitarpal.com/" title="Just another WordPress site"><img src="<?php bloginfo('template_url'); ?>/images/logo.png" alt="My Guitar Pal"></a>
+                    </div>
+                    <div class="rightheader">
+                        <form name="wp_login_form" id="wp_login_form" action="" method="post">
+                            <div class="sigupppy">
+                                <div class="hdngs">
+                                    <span>email:</span>
+                                    <input type="text" tabindex="10" id="user_login" name="username" class="loginfield">
+                                </div> <!-- END div hdngs -->
+                                <div class="hdngs password">
+		                            <span>password:</span>
+                                    <input type="password" tabindex="20" size="15" id="user_pass" name="password" class="loginfield">
+		                        </div> <!-- END div txting -->
+		                       <!-- To hold validation results -->
+		                       <!-- END div btng --><!-- END div frgety -->
+		                    </div>
+                            <div class="btng">
+                                <input type="submit" value="Log In" class="roundedbtn" id="submitbtn">
+                                <input type="button" value="Sign Up" class="roundedbtn" onclick="window.location.href='?page_id=17'">
+		                    </div>
+                        </form>
+                    </div>
+                </div>  
+            </div>
+            <div class="inner-wrapper">
+                <div class="navi">    
+                    <a href="#" class="active">Home</a><a href="#">Blog</a>
+                </div>
+                <div class="mid-wraper">
+                    <div class="banner-text">
+                        <h2>Launching 2014</h2>
+                            <p>In the meantime why don't you sign up
+                                for 10 free video lessons, with new free 
+                                lessons added all the time?</p>
+                            <h4>Free Lessons!</h4>
+                            <div class="large-text">Follow us on Facebook and Twitter
+                                and You Could Win a New Guitar
+                                From 
+                                <div class="signup">
+                                    <a href="#"><img src="<?php bloginfo('template_url'); ?>/images/singnup.png" width="109" height="35" /></a>
+                                </div>
+                                <div class="sign"><img src="<?php bloginfo('template_url'); ?>/images/sign.png" width="165" height="45" /></div>
+                                <div class="socialIcon">
+                                    <a href="https://www.facebook.com/MyGuitarPal" target="_blank">
+                                    <img src="<?php bloginfo('template_url'); ?>/images/f-icon.png" width="33" height="32" /></a>
+                                    <a href="https://twitter.com/MyGuitarPal" target="_blank">
+                                    <img src="<?php bloginfo('template_url'); ?>/images/t-icon.png" width="33" height="32" /></a>
+                                </div>
+                            </div>
+                            <div class="r-text">Contest Ends "Date"</div>
+                      </div>
+                      <div class="video"><img src="<?php bloginfo('template_url'); ?>/images/video.png" width="453" height="331" /></div>
+                </div>
+            </div>
+        </div>
+        <?php //woo_header_after(); ?>
+          
 
-
- 
-      
-</div><!-- /#header -->
-    
-</div> 
-
-<div class="wrapperContent">
-<div id="wrapper">      
-
-<?php woo_header_after(); ?>
 

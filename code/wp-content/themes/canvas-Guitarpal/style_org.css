@@ -24,7 +24,11 @@ body
 	margin:0px!important;
 	
 }
-
+body, p
+{
+	 font: 12px Arial,sans-serif!important;
+	 color:#5c5b5b!important;
+}
 
 .clear
 {
@@ -77,14 +81,13 @@ a:focus
 	background:#dedede;
 	height:75px;
 	width:100%;
-	margin-top: 30px;
 }
 .header
 {
+	border:0px solid red;
 	margin:0 auto;
 	width:1060px;
-	height:74px;
-    position: relative;
+	height:74px;	
 }
 .logo
 {
@@ -212,12 +215,6 @@ border-radius: 8px;
     width: 66%;
 	background:url(images/dotted.png) repeat-x ;
 	background-position:bottom left;
-}
-
-.sign {
-    position: absolute;
-    right: 122px;
-    top: 63px;
 }
 .signupfreelesson img
 {
@@ -640,6 +637,17 @@ border-radius: 7px;
     position: absolute;
     z-index: 9999;
 }
+
+.searchbar input, textarea
+{
+	margin-bottom: 0px!important;
+	padding:0px!important;
+}
+input, textarea
+{
+	margin-bottom: 1px!important;
+	padding:3px!important;
+}
 table td, table th{
 vertical-align: middle!important;
 }
@@ -672,8 +680,18 @@ input[type="password"]:focus
 {
 	margin-left:8px;
 }
-
-
+.sigupppy
+{
+	float: right;width: 416px;
+}
+.sigupppy .hdngs
+{
+	float:left; width:79px;
+}
+.sigupppy .txting
+{
+float:left; width:164px;
+}
 .sigupppy .btng
 {
 float: left;
@@ -800,177 +818,4 @@ ul.nav ul li.current-menu-item a {
 }
 #top #top-nav {
   display: none;
-}
-/* new style*/
-.mainbanner{
-	 width:1060px;
-	 margin:0 auto;	
-}
-.top-section{
-	position: relative; width:100%; float:left; height:589px;
-}
-.mainbanner img{
-	position:absolute;  z-index:-99;
-}
-.inner-wrapper{
-	width:1060px;
-	margin:9px auto 0;
-	}
-.navi{
-		font:18px 'Microsoft Sans Serif',sans-serif;
-		padding-left:168px;}
-.navi a{ padding-right:40px; color:#000;}
-.navi a.active,.navi a:hover{ color:#FFF;}
-.mid-wraper{ float:left; width:100%;padding-left:71px;margin-top: 40px;}
-
-.mid-wraper .banner-text {
-    color: #FFFFFF;
-    float: left;
-    font-family: tahoma;
-    margin-right: 78px;
-    position: relative;
-    width: 350px;
-}
-
-.mid-wraper .banner-text h2 {
-    font-family: tahoma;
-    font-size: 42px;
-    color: #ffffff;
-}
-.mid-wraper .banner-text h4{ font-size:23px;color: #ffffff;}
-.mid-wraper .banner-text .large-text {
-    font-size: 23px;
-    margin-top: 15px; position:relative;
-    color: #ffffff;
-}
-.banner-text p{ padding:2px 0 5px; font-size:17px;color:#ffffff;}
-.banner-text .signup {
-    bottom: 97px;
-    position: absolute;
-    right: 72px;
-}
-.banner-text .socialIcon {
-    bottom: -16px;
-    position: absolute;
-    right: 0px;
-}
-
-.r-text {
-    font-size: 17px;
-    padding-top: 26px;
-    text-align: right;
-}
-.socialIcon > a {
-    margin-right: 12px;
-}
-.mid-wraper .video{ float:left;}
-.mid-section{ padding:0px 47px 0 69px;}
-.contentwraper{ float:left; width:100%;}
-.col-1 {
-    display: inline-block;
-    height: 353px;
-	position:relative;
-    text-align: center;
-    vertical-align: middle;
-    width: 233px;
-}
-.col-1.highlight{
-	background:url(../images/bg-hover.png) repeat;
-	}
-
-.col-1 h4 {
-    color: #494949;
-    font: 18px microsoft sans serif;
-    margin: 0 auto;
-    padding: 20px 0 24px;
-    width: 170px;
-}
-.img-box {
-    display: table-cell;
-    height: 176px;
-    padding-top: 45px;
-    text-align: center;
-    vertical-align: middle;
-    width: 233px;
-}
-
-.footer {
-    margin: 0 auto;
-    width: 1060px;
-	padding:0;
-}
-
-.oval {
-    bottom: -1px;
-    left: 38px;
-    position: absolute;
-	cursor:pointer;
-}
-.col-1 .arrow {
-    left: -69px;
-    position: absolute;
-    top: -44px;
-	display:none;
-}
-.col-1.highlight .arrow{ display:block; }
-.footer{ background:#262626; height:190px; width:1063px; clear:both;}
-.footer .logo,.footer .icons{ float:left; width:100%;}
-.footer .social  { float: left;    padding-left: 88px;    padding-top: 12px;    width: 83%;}
-.footer .social .links{ float:left; width:43%;}
-.footer .social .links > a {padding-right: 15px;}
-.footer .text {color: #C6C6C6;float: left;padding-top: 17px; text-align: center;width: 100%;font-size:12px;}
-.footer .right-text {    color: #FFFFFF;    float: right;    font: italic bold 18px arial;    text-align: right;    width: 41%;}
-.footer .right-text span.left{ float:left; background:url(images/l-quo.gif) no-repeat; width:20px; height:18px;}
-.footer .right-text span.right{ float:right; background:url(images/r-quo.gif) no-repeat; width:20px; height:18px;}
-.footer .right-text span.mid{ padding-right:5px;}
-
-.sigupppy {
-    float: left;
-    width: 244px;
-	padding-top:6px;
-
-}
-.btng {
-    float: left;
-    width: 220px;
-	margin-top:26px;
-}
-.sigupppy .hdngs{
- float: left;
-    width: 100%;
-}
-.sigupppy .txting {
-    float: left;
-    width: 100%;
-}
-
-.hdngs > span {
-    display: block;
-    float: left;
-    margin-right: 10px;
-	margin-top: 6px;
-    text-align: right;
-    width: 73px;
-	font-family:Tahoma, Geneva, sans-serif;
-}
-.loginfield {
-    border: 1px solid #C2C2C2;
-    height: 24px;
-    width: 153px;
-}
-.roundedbtn {
-    font-family: tahoma;
-    font-size: 17px;
-    height: 28px;
-    width: 90px;
-}
-.password{ margin-top:5px;}
-
-.roundedbtn {
-    font-family: tahoma;
-    font-size: 15px;
-    font-weight: bold;
-    height: 28px;
-    padding: 0;
-    width: 90px;
 }
