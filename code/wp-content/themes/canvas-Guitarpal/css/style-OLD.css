@@ -1,0 +1,578 @@
+@charset "utf-8";
+/* CSS Document */
+body
+{
+	font-size:12px;
+	font-family:Arial, Helvetica, sans-serif;
+	background-color:#828282;
+	
+	margin:0px;
+	
+}
+body, p
+{
+	 font: 12px Arial,sans-serif!important;
+	 color:#5c5b5b!important;
+}
+
+.clear
+{
+	margin:0;
+	height:0;
+	padding:0;
+	clear:both;
+}
+a
+{
+	text-decoration:none;
+	cursor:pointer;
+}
+a img {
+	border: none;
+}
+img {
+	border: none;
+}
+h1,h2,h3,h4,h5,h6,p{
+	padding:0;
+	margin:0;
+	
+}
+input
+{
+	cursor:pointer;
+}
+a:focus
+{
+	outline:none;
+}
+/*=================Header===============*/
+/*======================================*/
+.headercovertop
+{
+	width:1060px;
+	background:url(../images/headertop.png) repeat-x;
+	height:26px;
+	margin:0 auto;
+}
+.headercover
+{
+	background:#dedede;
+	height:75px;
+	width:100%;
+}
+.header
+{
+	border:0px solid red;
+	margin:0 auto;
+	width:1060px;
+	height:74px;	
+}
+.logo
+{
+position: absolute;
+    z-index: 9999;	
+}
+.logo img
+{
+	float: left;
+    margin-top: -15px;
+	
+}
+.rightheader
+{
+	float:right;
+	
+	border:0px solid red;
+	margin-top: 2px;
+	
+}
+.roundedbtn
+{
+	float:left; background:#f7941e; border:0; color:#fff; font-size:14px; font-weight:bold; padding:5px 10px 5px 10px; margin-left:10px;
+	-webkit-border-radius: 8px;
+-moz-border-radius: 8px;
+border-radius: 8px;
+}
+.loginfield
+{
+	border:1px solid #c2c2c2; width:157px; height:27px;
+}
+
+.rightheader span
+{
+	font-weight:bold;
+	font-size:14px;
+}
+/*=================Content===============*/
+/*======================================*/
+.wrapperContent
+{
+	width:1060px;
+	margin:0 auto;
+	border:0px solid red;
+	background:url(../images/headertop.png) repeat;
+}
+.content
+{
+	width:100%;
+	float:left;
+}
+.leftcontent
+{
+	width:133px;
+	
+	float:left;
+}
+
+.mdlcontent
+{
+	width:788px;
+	float:left;
+	
+}
+.mdlleftcontent
+{
+	 float: left;
+    margin-left: 8px;
+    width: 386px;
+}
+.menu
+{
+	float:left;
+	width:100%;
+	margin-top:15px;
+}
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.menu ul li {
+   float: left;
+    padding-left: 9px;
+    padding-right: 9px;
+}
+.menu ul li a{
+	 color: #393939;
+    font-size: 12px;
+    font-weight: bold;
+}
+.contenthdng
+{
+	color: #585858;
+    float: left;
+    font-size: 32px;
+   
+    margin-top: 15px;
+    text-align: center;
+    width: 100%;
+	font-family:Impact;
+}
+.contendetail
+{
+	color: #585858;
+    float: left;
+    font-size: 20px;
+   
+    margin-top: 15px;
+    text-align: center;
+    width: 100%;
+	
+}
+.signupfreelesson
+{
+	float: left;
+    margin-left: 59px;
+   margin-top: 15px;
+    padding-bottom: 10px;
+    width: 66%;
+	background:url(../images/dotted.png) repeat-x ;
+	background-position:bottom left;
+}
+.signupfreelesson img
+{
+	float:left;
+}
+.fourbox
+{
+	float:left;
+	width:100%;
+	margin-top: 10px;
+	
+}
+.smallfourboxes
+{
+	float:left;
+	width:165px;
+	 margin-left: 18px;
+}
+.smallfourboxes .smallhdng
+{
+	background:url(../images/rightarrow.png) no-repeat;
+	width:90%;
+	padding-left:30px;
+	font-size:14px;
+	font-weight:bold;
+	padding-top:7px;
+	height:20px;
+	margin-top:10px;
+}
+.smallfourboxes .baja
+{
+background:url(../images/headfone.png) no-repeat;
+padding-left: 39px;
+}
+.smallfourboxes p
+{
+	float:left;
+	margin-top:8px;
+	width:100%;
+	text-align:justify;
+}
+
+.mdlrightcontent
+{
+	float:right;
+	width:389px;
+}
+.mdlrightvideo
+{
+	float:left;
+	margin-top:15px;
+}
+.mdlrightvideo iframe
+{
+	box-shadow: 6px 7px 7px #888888;
+}
+.testinomialhomoepage
+{
+	float: left;
+    margin-left: 19px;
+   
+    margin-top: 21px;
+    width: 88%;
+	
+}
+.detailwalitesti
+{
+	float:left;
+	width:82%;
+	text-align:center;
+	color:#212020;
+	font-size:14px;
+}
+.detailwalitesti span
+{
+	font-size:25px;
+	
+}
+.commaenv
+{
+	background:url(../images/enverted.png) no-repeat;
+	width:27px;
+	height:34px;
+	float:left;
+	margin-top: 9px;
+}
+.commadec
+{
+	background:url(../images/converted.png) no-repeat;
+	width:27px;
+	height:34px;
+	float:right;
+	 margin-top: -17px;
+}
+.firstlinks img
+{
+	float:left;
+	padding-left:5px;
+}
+.sociallinks
+{
+	float:right;
+	margin-top: 6px;
+}
+.rightcontent
+{
+	width:138px;
+	
+	float:right;
+}
+/*=================Searchbar===============*/
+/*======================================*/
+.searchbar
+{
+	background:#484848;
+	width:100%;
+	height:40px;
+}
+.searchboxcoverie
+{
+	 margin-left: 428px;
+	 float:left;
+}
+.searchbox
+{
+	float: left;
+    height: 22px;
+   
+    margin-top: 9px;
+    width: 236px;
+	background:url(../images/searchbox.png) no-repeat;
+}
+.searchbox .abc
+{
+	 border: 0 none;
+    float: left;
+    font-size: 13px;
+    margin-left: 21px;
+    margin-top: 2px;
+}
+.searchbox .sub
+{
+	background: none repeat scroll 0 0 #8D8D8D;
+    border: 0 none;
+	-webkit-border-radius: 7px;
+-moz-border-radius: 7px;
+border-radius: 7px;
+    color: #D1D1D1;
+    float: left;
+    margin-top: 2px;
+}
+/*=================Footer===============*/
+/*======================================*/
+.footerCover
+{
+	float:left;
+	background:#1e1e1e;
+	height:258px;
+	width:100%;
+	
+}
+.footer
+{
+	 margin: 40px auto 0;
+    padding-left: 84px;
+}
+.footerbox
+{
+	float:left;
+	width:15.5%;
+	line-height:18px;
+}
+.footerboxheading
+{
+	font-weight:bold;
+	font-size:14px;
+	float:left;
+	color:#fff;
+	 margin-bottom: 12px;
+}
+.footerbox a
+{
+	float:left;
+	text-decoration:none;
+	width:100%;
+	color:#b8b8b8;
+	font-weight:bold;
+}
+.copyright
+{
+	color: #b8b8b8;
+    float: left;
+  
+    margin-left: 65px;
+    margin-top: 34px;
+    text-align: center;
+    width: 922px;
+}
+.forshadow
+{
+	background:url(../images/topshadowmdl.png) repeat-x;
+	float:left;
+	width:100%;
+	height:16px;
+}
+.forshadowinner
+{
+	background:url(../images/topshadowmdl.png) repeat-x;
+	float:left;
+	width:100%;
+	height:10px;
+}
+/*=================Signup===============*/
+/*======================================*/
+.wrapperContentsignup
+{
+	width:1060px;
+	margin:0 auto;
+
+	background:url(../images/signupbg.png) no-repeat;
+}
+.contentsignup
+{
+	width:888px;
+	margin:0 auto;
+		height:691px;
+}
+.package
+{
+	float:left;
+	width:730px;
+	height:405px;
+	margin-left: -17px;
+	background:url(../images/signup.png) no-repeat;
+}
+.freetrail
+{float: left;
+    height: 108px;
+    margin-left: 57px;
+    width: 524px;
+	
+}
+.leftcontentsignup
+{
+	float:left;
+	width:76%;
+	
+}
+.rightcontentsignup
+{
+	float: right;
+    margin-top: 60px;
+    text-align: center;
+    width: 22%;
+	
+}
+.rightcontentsignup img
+{
+	margin-top:23px;
+}
+.margnlfft
+{
+	margin-left:37px;
+}
+.margnlfftndtop
+{
+	margin-left:45px;
+
+}
+.marginzeorauto
+{
+	margin:0 auto;
+	width:1060px;
+}
+.clickfordetail
+{
+	float: left;
+    margin-top: 326px;
+    width: 219px;
+}
+/*=================Videos===============*/
+/*======================================*/
+.innercontentdiv
+{
+	float: left;
+    line-height: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 15px;
+    text-align: justify;
+    width: 95%;
+}
+
+/*=================Contact===============*/
+/*======================================*/
+.contentleft {
+    border: 0 solid red;
+    float: left;
+   
+    margin-left: 0;
+    margin-top: 20px;
+    width: 95%;
+}
+#contacttxt {
+    border: 0 solid red;
+    color: #666666;
+    float: left;
+    line-height: 26px;
+    margin-left: 0;
+    margin-top: 5px;
+    width: 360px;
+}
+/*=================Contact===============*/
+/*======================================*/
+.wrapperContentcourse
+{
+	width:1060px;
+	margin:0 auto;
+
+	background:url(../images/coursesbigline.png) repeat;
+}
+.coursehdng
+{
+	width:100%;
+	font-weight:bold;
+	font-size:17px;
+	margin-top:15px;
+	float:left;
+}
+.maincorse
+{
+	width:888px;
+	margin:0 auto;
+		height:691px;
+}
+.leftcorse
+{
+	float:left;
+	width:577px;
+	
+}
+.leftcoursebox
+{
+	float:left;
+	border:4px solid #838383;
+	border-top:0px;
+	border-right:0px;
+	width:100%;
+	height:188px;
+}
+.toppppi
+{
+	border-top:4px solid #838383;
+}
+.rightyyy
+{
+	border-right:4px solid #838383;
+}
+.leftcourseboxhdng1
+{
+	width:95%;
+	margin-left:10px;
+	font-weight:bold;
+	font-size:17px;
+	margin-top:15px;
+	float:left;
+}
+.leftcoursebox p
+{
+	float:left;
+	width:95%;
+	margin-left:10px;
+	margin-top:10px;
+	text-align:justify;
+	line-height:20px;
+}
+.rightcorse
+{
+	
+	float:left;
+	width:295px;
+	
+}
+.aa
+{
+	background:#fff; border:1px solid #F7941E
+}
