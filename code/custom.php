@@ -31,7 +31,9 @@ OR option_name = 'current_theme'";
 $update = "UPDATE launch_wp_options SET option_value = 'canvas' WHERE option_name = 'template'"; 
 $update1 = "UPDATE launch_wp_options SET option_value = 'canvas-Guitarpal' WHERE option_name = 'stylesheet'";
 $update2 = "UPDATE launch_wp_options SET option_value = 'canvas' WHERE option_name = 'current_theme'";
+$result = $link->query($update) or die("Error in the consult.." . mysqli_error($link));
 $result = $link->query($update1) or die("Error in the consult.." . mysqli_error($link));
+$result = $link->query($update2) or die("Error in the consult.." . mysqli_error($link));
 
 //display information:
 echo "<pre>";

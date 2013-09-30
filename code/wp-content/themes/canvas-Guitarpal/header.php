@@ -90,64 +90,39 @@
 <body>
     <?php woo_top(); ?>
     <div class="wrapper">
-        <?php woo_header_before(); ?>
         <div class="top-section">
-            <div class="mainbanner"><img src="<?php bloginfo('template_url'); ?>/images/bg-banner.jpg" width="1060" height="589" /></div>
-		    <div class="headercover">   
+            <div class="headercover">   
                 <div id="header" class="header">         
                     <div id="logo">
                         <a href="http://launch.myguitarpal.com/" title="Just another WordPress site"><img src="<?php bloginfo('template_url'); ?>/images/logo.png" alt="My Guitar Pal"></a>
-                    </div>
-                    <div class="rightheader">
-                        <form name="wp_login_form" id="wp_login_form" action="" method="post">
-                            <div class="sigupppy">
-                                <div class="hdngs">
-                                    <span>email:</span>
-                                    <input type="text" tabindex="10" id="user_login" name="username" class="loginfield">
-                                </div> <!-- END div hdngs -->
-                                <div class="hdngs password">
-		                            <span>password:</span>
-                                    <input type="password" tabindex="20" size="15" id="user_pass" name="password" class="loginfield">
-		                        </div> <!-- END div txting -->
-		                       <!-- To hold validation results -->
-		                       <!-- END div btng --><!-- END div frgety -->
-		                    </div>
-                            <div class="btng">
-                                <input type="submit" value="Log In" class="roundedbtn" id="submitbtn">
-                                <input type="button" value="Sign Up" class="roundedbtn" onclick="window.location.href='?page_id=17'">
-		                    </div>
-                        </form>
-                    </div>
-                </div>  
+                    </div>        
+                </div>       
             </div>
-            <div class="inner-wrapper">
-                <div class="navi">    
-                    <a href="#" class="active">Home</a><a href="#">Blog</a>
+            <div class="navi">
+                <div class="inner_navi"> 
+                    <div class="main-links"><span></span><a href="#" >Home</a><span></span><a href="#" class="active">Blog</a><span></span></div>
+                    <div class="register"><span></span><a href="#">Log In</a><span></span><a href="#">Sign Up</a><span></span></div>
                 </div>
+            </div>
+            <div class="mainbanner"><img src="<?php bloginfo('template_url'); ?>/images/bg-banner.jpg" width="1060" height="589" /></div>    
+            <div class="inner-wrapper">
                 <div class="mid-wraper">
                     <div class="banner-text">
                         <h2>Launching 2014</h2>
-                            <p>In the meantime why don't you sign up
-                                for 10 free video lessons, with new free 
-                                lessons added all the time?</p>
-                            <h4>Free Lessons!</h4>
-                            <div class="large-text">Follow us on Facebook and Twitter
-                                and You Could Win a New Guitar
-                                From 
-                                <div class="signup">
-                                    <a href="#"><img src="<?php bloginfo('template_url'); ?>/images/singnup.png" width="109" height="35" /></a>
-                                </div>
-                                <div class="sign"><img src="<?php bloginfo('template_url'); ?>/images/sign.png" width="165" height="45" /></div>
-                                <div class="socialIcon">
-                                    <a href="https://www.facebook.com/MyGuitarPal" target="_blank">
-                                    <img src="<?php bloginfo('template_url'); ?>/images/f-icon.png" width="33" height="32" /></a>
-                                    <a href="https://twitter.com/MyGuitarPal" target="_blank">
-                                    <img src="<?php bloginfo('template_url'); ?>/images/t-icon.png" width="33" height="32" /></a>
-                                </div>
-                            </div>
-                            <div class="r-text">Contest Ends "Date"</div>
-                      </div>
-                      <div class="video"><img src="<?php bloginfo('template_url'); ?>/images/video.png" width="453" height="331" /></div>
+                        <p>In the meantime why don't you sign up
+                        for 10 free video lessons, with new free 
+                        lessons added all the time?</p>
+                        <h4>Free Lessons!</h4>
+                        <div class="large-text">Follow us on Facebook and Twitter
+                        and You Could Win a New Guitar
+                        From 
+                            <div class="signup"><a href="#"><img src="<?php bloginfo('template_url'); ?>/images/singnup.png" width="109" height="35" /></a></div>
+                            <div class="sign"><img src="<?php bloginfo('template_url'); ?>/images/sign.png" width="155" height="45" /></div>
+                            <div class="socialIcon"><a href="#"><img src="<?php bloginfo('template_url'); ?>/images/f-icon.png" width="33" height="32" /></a><a href="#"><img src="<?php bloginfo('template_url'); ?>/images/t-icon.png" width="33" height="32" /></a></div>
+                        </div>
+                        <div class="r-text">Contest Ends "Date"</div>
+                    </div>
+                    <div class="video"><img src="<?php bloginfo('template_url'); ?>/images/video.png" width="453" height="331" /></div>
                 </div>
             </div>
         </div>
